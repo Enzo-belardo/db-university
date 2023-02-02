@@ -1,0 +1,7 @@
+Selezionare tutti gli studenti iscritti al corso di laurea in economia:
+
+SELECT `students`.`id` AS `number_students`, `degrees`.`name` AS `name_exams`
+FROM `degrees` 
+JOIN `students` 
+ON `students`.`degree_id` = `degrees`.`id`
+WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
